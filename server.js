@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 
-const port = process.env.PORT;
+const PORT = process.env.PORT;
 
 app.get('/', (req, res) => {
 
@@ -32,6 +31,6 @@ app.get('/owls', (req, res) => {
     res.json(owls)
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:${PORT}`);
 });
